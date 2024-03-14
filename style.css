@@ -1,3 +1,15 @@
+:root{
+    --bg-color: #0E2954;
+    --second-bg-color: #00ffff;
+    --third-bg-color: #0f1c31;
+    --text-color: white;
+    --main-color: #F05454;
+
+    --box-border-color: coral;
+    --box-bg-color: #333;
+    --box-text-color: crimson;
+
+}
 
 [type='radio']{
     /* margin kam kore */
@@ -114,6 +126,14 @@ body{
     height: 90px;
 }
 @media(max-width:800px){
+    *{
+        
+        
+        font-size: 12px;
+        line-height: 1em;
+    
+    }
+
     #main{
         width: 100%;
         float: none;
@@ -133,4 +153,30 @@ body{
 .mui{
     margin: 20px;
     border-radius: 20px;
+}
+
+.box{
+    width: 100%;
+    display: grid;
+    font-size: 20px;
+    /* grid-template-columns: 200px 500px auto 2fr 1fr; */
+    grid-template-columns: 1fr 4fr 1.5fr 3fr .5fr;
+    grid-template-rows: 300px 300px;
+
+}
+
+.d1{
+    background-color: #F05454;
+}
+.d2{
+    background-color: #381e1e;
+}
+.d3{
+    background-color: #54f095;
+}
+.d4{
+    background-color: #7154f0;
+}
+.d5{
+    background-color: #b41c68;
 }
