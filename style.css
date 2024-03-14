@@ -1,3 +1,13 @@
+
+[type='radio']{
+    /* margin kam kore */
+    /* margin: 30px; */
+
+    /* color change kam kore na */
+    color: red; /* Changed the color to red as per the instructions */
+}
+
+
 body{
     background-color: #f4f4f4;
     color: #555;
@@ -16,17 +26,19 @@ body{
 
 #main-header{
     background-color: orangered;
+    /* filter: blur(5px);  */
+    /* Added a blur effect to the background color as per the instructions */
     color: #fff;
 }
 #navbar{
     background-color: #333;
     color: #f4f4f4;
-
 }
 
 #navbar ul{
     padding: 0;
     list-style:none;
+    
 }
 
 #navbar li{
@@ -58,18 +70,25 @@ body{
 
 #main{
     float: left;
-    width: 70%;
-    padding: 0 30px;
+
+    background-color: #333;
+    color:#fff;
+
+    width: 65%;
     box-sizing: border-box;
+
+
+    
 }
 
 #sidebar{
     float: right;
-    width: 30%;
+    width: 25%;
     background-color: #333;
     color:#fff;
     box-sizing: border-box;
     padding: 10px;
+
 }
 
 #main-footer{
@@ -78,9 +97,23 @@ body{
     text-align: center;
     margin-top: 30px;
     padding: 20px;
+
 }
 
-@media(max-width:600px){
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+#form form input{
+    width: 90px;
+    height: 90px;
+}
+@media(max-width:800px){
     #main{
         width: 100%;
         float: none;
@@ -90,4 +123,14 @@ body{
         width: 100%;
         float: none;
     }
+
+    #form form input{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.mui{
+    margin: 20px;
+    border-radius: 20px;
 }
